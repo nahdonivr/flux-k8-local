@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31e199a4-f458-4f33-950b-412d64b27cef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/apps/kube.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/devops-toolkit.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/apps/devops-toolkit.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +26,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../devops-toolkit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/apps" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\VINOD-R\Documents\Projects\flux-k8-local\apps" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -39,7 +43,7 @@
       <option name="presentableId" value="Default" />
       <updated>1636549089757</updated>
       <workItem from="1636549090884" duration="593000" />
-      <workItem from="1636604755099" duration="8693000" />
+      <workItem from="1636604755099" duration="9585000" />
     </task>
     <servers />
   </component>
