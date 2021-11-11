@@ -14,7 +14,8 @@ spec:
   interval: 30s
   targetNamespace: flux
   values:
-    image: webfairooz/k8-app:1.0
-    ports:
-      - containerPort: 3001
+    image:
+      tag: 2.9.9
+    ingress:
+      host: staging.devops-toolkit.10.96.97.126:31912.nip.io
 
