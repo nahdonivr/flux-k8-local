@@ -1,21 +1,34 @@
 ---
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
-kind: HelmRelease
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: devops-toolkit-k8-local
-  namespace: flux-system
+  name: k8-node-app-deployment
 spec:
-  chart:
+  selector:
+    matchLabels:
+      app: nodeapp
+  replicas: 1 # tells deployment to run 1 pods matching the template
+  template: # create pods using pod definition in this template
+    metadata:
+      labels:
+        app: nodeapp
     spec:
-      chart: helm
-      sourceRef:
-        kind: GitRepository
-        name: devops-toolkit
-  interval: 30s
-  targetNamespace: flux
-  values:
-    image:
-      tag: 2.9.9
-    ingress:
-      host: staging.devops-toolkit.172.24.115.51:31912.nip.io
+      containers:
+        - name: kube-node-app
+          image: webfairooz/k8-app:1.0
+          ports:
+            - containerPort: 3001
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: k8-node-app-service
+spec:
+  type: NodePort
+  ports:
+    - port: 3001
+      protocol: TCP
+      targetPort: 3001
+  selector:
+    app: nodeapp
 
